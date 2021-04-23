@@ -1,6 +1,23 @@
 {
+  "name": "lgbc",
+  "version": "1.0.0",
+  "keywords": [
+    "git",
+    "branches",
+    "cli"
+  ],
+  "author": "Tanguy Antoine <jakikiller35@gmail.com>",
+  "files": [
+    "dist/",
+    "bin/"
+  ],
+  "bin": {
+    "lgbc": "./bin/lgbc.js"
+  },
+  "license": "MIT",
   "scripts": {
-    "dev": "tsc --watch"
+    "dev": "tsc --watch",
+    "prepublish": "rm -rf dist/ && yarn tsc"
   },
   "devDependencies": {
     "@types/inquirer": "^7.3.1",
