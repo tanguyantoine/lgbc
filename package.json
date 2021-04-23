@@ -1,6 +1,6 @@
 {
   "name": "lgbc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "git",
     "branches",
@@ -17,7 +17,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "tsc --watch",
-    "prepublish": "rm -rf dist/ && yarn tsc"
+    "prepublishOnly": "rm -rf dist/ && yarn tsc"
   },
   "devDependencies": {
     "@types/inquirer": "^7.3.1",
