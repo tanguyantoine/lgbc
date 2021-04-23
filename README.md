@@ -8,4 +8,18 @@ Local Git Branch cleaner helps selecting and deleting local branches when not ne
 
 ```bash
 yarn global add lgbc
+
+# or
+
+npm install -g lgbc
+```
+
+## Usage
+
+```bash
+lgbc
+
+# or 
+
+lgbc --cwd ../path/to/my-repo
 ```
