@@ -21,18 +21,10 @@ async function main() {
           })),
       },
     ])
-    git.deleteLocalBranches(branches.map(b => b.name))
+    await git.deleteLocalBranches(branches.map(b => b.name), true)
     main()
-  } catch (e) {
-    switch (e.errorFunction) {
-      case 'Repository.open': {
-        console.error('Not a valid git repository')
-        break
-      }
-      default: {
-        console.error(e.toString())
-      }
-    }
+  } catch (e: any) {
+    console.error(e.toString())
   }
 }
 
